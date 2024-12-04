@@ -2,14 +2,13 @@ function mostrarMensaje(){
     alert("Hola Bienvenidos....");
 }
 // Validación de formulario
-const form = document.getElementById('contactForm');
-form.addEventListener('submit', function(event) {
- const name = document.getElementById('name').value;
- const email = document.getElementById('email').value;
- if (name === '' || email === '') {
+function validarFormulario(){
+ let nombre = document.getElementById('nombre').value;
+ let email = document.getElementById('email').value;
+ if (nombre === '' || email === '') {
  alert('Por favor, completa todos los campos.');
  event.preventDefault();
  } else {
  alert('¡Formulario enviado correctamente!');
  }
-});
+}
