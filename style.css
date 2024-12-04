@@ -63,3 +63,11 @@ button{
 button{
     background-color: #45a049;
 }
+/*enlaces*/
+a{
+    color: #4caf50;
+    text-decoration: none;
+}
+a :hover{
+    text-decoration: underline;
+}
